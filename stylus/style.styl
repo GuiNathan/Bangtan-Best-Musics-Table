@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+@import 'mixins_vars/mix_var.styl'
+
+
+body
+	background-image url('../image/bts_bg.jpg')
+
+table, th, td, tr
+	default-border(1, #000)
+	text-align center
+	th
+		padding 10px
+		font-family 'Sunflower', sans-serif
+		font-size 22px
+	td
+		padding 5px
+		font-size 16px
+
+table
+	center-align()
+	margin-top 130px
+	background rgba(255,255,255,0.8)
+	box-shadow 0px 0px 30px #fff
+	
+audio
+	opacity : 0
+	
+.music_name_td
+	cursor pointer
+	&:hover
+		background rgba(0,0,0,.2)
+
+.selected
+	default-border(1, #f7904a)
+	background rgba(247, 132, 54,0.5)
+		
